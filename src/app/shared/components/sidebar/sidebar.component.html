@@ -1,0 +1,25 @@
+<h2> Paises </h2>
+<hr>
+
+
+<ul class="list-group">
+  <li class="list-group-item" routerLinkActive="active" [routerLink]="['/']" [routerLinkActiveOptions]="{exact:true}">
+    Home page
+  </li>
+
+  <li class="list-group-item" routerLinkActive="active" [routerLink]="['/about']">
+    About page
+  </li>
+  <li class="list-group-item" routerLink="/contact" routerLinkActive="active">
+    contact page
+  </li>
+  <li class="list-group-item" routerLink="countries/by-capital" routerLinkActive="active">
+    Por Capital
+  </li>
+  <li class="list-group-item" routerLink="countries/by-country" routerLinkActive="active">
+    Por Pais
+  </li>
+  <li class="list-group-item" routerLink="countries/by-region" routerLinkActive="active">
+    Por Region
+  </li>
+</ul>
