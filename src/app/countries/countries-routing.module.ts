@@ -22,7 +22,12 @@ const routes: Routes = [
   {
     path: 'by/:id',
     component: CountryPageComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'by-capital'
   }
+
 
 ]
 @NgModule({
