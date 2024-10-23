@@ -8,14 +8,32 @@ import { Country } from '../interface/country'
 export class CountriesService {
   private apiUrl: string = 'https://restcountries.com/v3.1';
 
+
   constructor(private http: HttpClient) { }
 
 
   searchCapital(term: string): Observable<Country[]> {
     const url = `${this.apiUrl}/capital/${term}`
     return this.http.get<Country[]>(url)
-    .pipe(
-      catchError(()=>of([]))
-    );
+      .pipe(
+        catchError(() => of([]))
+      );
   }
+
+  searchCountry(term: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/name/${term}`
+    return this.http.get<Country[]>(url)
+      .pipe(
+        catchError(() => of([]))
+      );
+  }
+  searchRegion(region: string): Observable<Country[]> {
+    const url = `${this.apiUrl}/region/${region}`
+    return this.http.get<Country[]>(url)
+      .pipe(
+        catchError(() => of([]))
+      )
+
+  }
+
 }
