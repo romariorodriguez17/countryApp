@@ -2,7 +2,8 @@
 <hr>
 <div class="row">
   <div class="col">
-    <app-search-box placeholder="Este es el buscador" (onValue)="searchByCountry($event)">
+    <app-search-box placeholder="Este es el buscador" (onDebounce)="searchByCountry($event)"
+      [initialValue]="initialVlue">
     </app-search-box>
   </div>
 </div>
