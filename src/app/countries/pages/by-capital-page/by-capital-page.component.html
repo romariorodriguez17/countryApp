@@ -4,7 +4,8 @@
 
 <div class="row">
   <div class="col">
-    <app-search-box placeholder="Este es el buscador" (onDebounce)="searchByCapital($event)">
+    <app-search-box placeholder="Este es el buscador" (onDebounce)="searchByCapital($event)"
+      [initialValue]="initialVlue">
 
     </app-search-box>
 
