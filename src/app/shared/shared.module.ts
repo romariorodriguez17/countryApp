@@ -7,6 +7,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 
 
@@ -16,6 +17,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AboutPageComponent,
     ContactPageComponent,
     HomePageComponent,
+    LoadingSpinnerComponent,
     SearchBoxComponent,
     SidebarComponent,
   ],
@@ -28,6 +30,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AboutPageComponent,
     ContactPageComponent,
     HomePageComponent,
+    LoadingSpinnerComponent,
     SearchBoxComponent,
     SidebarComponent,
   ]
